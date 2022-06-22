@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: rgb(0, 187, 255);
+            width: 600px;
+            border: 15px solid green;
+            padding: 50px;
+            margin: 20px;
+        }
+
+        ul.a {
+            list-style-type: circle;
+        }
+
+        ul.b {
+            list-style-type: square;
+        }
+
+
+        ol.a {
+            list-style-type: upper-roman;
+        }
+
+        ol.b {
+            list-style-type: lower-alpha;
+        }
+
+        table,
+        tr,
+        td {
+            border: 2px solid;
+        }
+
+        table {
+            width: 50%;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        th {
+            height: 70px;
+        }
+
+        tr:hover {
+            background-color: red;
+        }
+
+        tr:nth-child(odd) {
+            background-color: pink;
+        }
+
+        /* 
+        li {
+            display: grid;
+        } */
+
+        div.ex1 {
+            width: 500px;
+            margin: auto;
+            border: 2px solid pink;
+        }
+
+
+        div.ex2 {
+            max-width: 500px;
+            margin: auto;
+            border: 3px solid orange;
+        }
+
+        div.relative {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid orange;
+        }
+
+        div.absolute {
+            position: -ms-page;
+            top: 80px;
+            right: 0;
+            width: 300px;
+            height: 100px;
+            border: 3px solid red;
+        }
+
+        img {
+            position: relative;
+            right: 0px;
+            top: 0fr;
+            z-index: -1;
+        }
+
+        /* p::first-letter {
+            color: red;
+            font-size: xx-large;
+        } */
+        .letter-heighlight::first-letter {
+            color: red;
+            font-size: xx-large;
+        }
+
+        /* ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+} */
+
+        .active {
+            background-color: orange;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: orange;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 4px rgba(0, 0, 0, 0.2);
+            padding: 14px 20px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block
+        }
+
+        img {
+            opacity: 0.1;
+        }
+
+        img:hover {
+            opacity: 0.7;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>INTRODUCTION</h1>
+    <p>welcome to our website page</p>
+    <div>
+        a web page is a hypertext docoument written in html on world wide web.
+    </div>
+    <h1>hello world</h1>
+    <p><a href="./royal-enfield-classic-350_1574056422.avif" target="blank"> press the link</a></p>
+    <p>unorder list</p>
+    <ul class="a">
+        <li>light</li>
+        <li>fan</li>
+        <li>tv</li>
+        <li>laptop</li>
+    </ul>
+    <ul class="b">
+        <li>light</li>
+        <li>fan</li>
+        <li>tv</li>
+        <li>laptop</li>
+    </ul>
+    <p>order list</p>
+    <ol class="a">
+        <li>biscut</li>
+        <li>icecream</li>
+        <li>cake</li>
+        <li>chocki</li>
+    </ol>
+    <ol class="b">
+        <li>biscut</li>
+        <li>icecream</li>
+        <li>cake</li>
+        <li>chocki</li>
+    </ol>
+    <table>
+        <tr>
+            <th>vegetables</th>
+            <th>fruits</th>
+        </tr>
+        <tr>
+            <td>carrot</td>
+            <td>tomatto</td>
+        </tr>
+        <tr>
+            <td>brinjal</td>
+            <td>chilli</td>
+        </tr>
+        <tr>
+            <td>apple</td>
+            <td>mango</td>
+        </tr>
+        <tr>
+            <td>grappes</td>
+            <td>watermelon</td>
+        </tr>
+
+    </table>
+
+    <p>Horizontal menubar:</p>
+    <ul>
+
+        <li><a href="../../Table Structure/" target="one">table stracture</a></li>
+        <li><a href="../bgimage.webp" target="_blank">image</a></li>
+        <li><a href="../../Bio data/" target="_blank">biodata</a></li>
+        <li><a href="../../hospital application/"> hospital application</a></li>
+    </ul>
+    <h1>MAIN CONCEPT</h1>
+    <div class="ex.1"> HTML</div>
+    <div class="ex.2">CSS</div>
+    <div class="relative">my name is surender
+        <div class="absolute">i am comming from salem</div>
+        <h1>THIS IS FERRARI CAR</h1>
+        <img src="../2nd task/IMAGE.jpg">
+        <p class="letter-heighlight">Ferrari S.p.A. is an Italian luxury sports car manufacturer based in Maranello,
+            Italy. Founded by Enzo
+            Ferrari in 1939 from the Alfa Romeo racing division as Auto Avio Costruzioni, the company built its
+            first car in 1940, and produced its first Ferrari-badged car in 1947</p>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+        <p> This is our web page</p>
+        <div class="dropdown">
+            <span>touch the mouse</span>
+            <div class="dropdown-content">
+                <p>Hii...</p>
+            </div>
+            <div class="dropdown">
+                <span>touch the mouse </span>
+                <div class="dropdown-content">
+                    <p>how are you</p>
+                </div>
+                <div class="droupdown">
+                    <button class="button"> press </button>
+                    <div class="droupdown-content">
+                        <a href="#">link1</a>
+                        <a href="#">link2</a>
+                        <a href="#">linl3</a>
+                    </div>
+                    <img src=".//royal-enfield-classic-350_1574056422.avif">
+
+</body>
+
+</html>
